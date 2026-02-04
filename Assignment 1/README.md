@@ -1,26 +1,29 @@
-# Personal Portfolio — Week 1 (HTML)
 
-Project: simple personal portfolio demonstrating basic HTML structure, semantic tags, images, internal navigation and a contact form.
+# Personal Portfolio — Sarthak Gawari (Week 1: HTML)
 
-Files created
-- [index.html](index.html) — main portfolio page
-- [style.css](style.css) — basic styles
-- images/ — folder for profile and gallery images (includes placeholder)
-- [requirements.txt](requirements.txt) — optional (empty)
+Project overview
+- A simple personal portfolio website built by Sarthak Gawari (3rd Year IT Student, PICT). The site showcases about information, skills, a project image gallery, and a contact form.
+
+Files in this folder
+- [index.html](index.html) — main portfolio page (title: "Sarthak Gawari | Portfolio").
+- [style.css](style.css) — basic styles for layout and responsiveness.
+- images/ — contains project and profile images referenced by the page (ICON.png, KC.png, CE.png, BB.png).
+- [requirements.txt](requirements.txt) — no dependencies for this static project.
 
 How to run
-1. Open `index.html` in your browser (double-click or right-click → Open with → browser).
-2. Replace images in the `images/` folder (profile.jpg, sample1.jpg, sample2.jpg, sample3.jpg) with your own photos/screenshots.
+1. Open [index.html](index.html) in your web browser.
+2. Replace or add image files in the `images/` folder using the filenames referenced in the HTML (ICON.png, KC.png, CE.png, BB.png).
 
-What I learned
-- HTML5 document structure and semantic tags (`header`, `nav`, `main`, `section`, `footer`).
-- Creating forms with proper labels, input types and required attributes.
-- Adding images with meaningful `alt` text and building internal navigation links.
+Site highlights (from the current `index.html`)
+- Author: Sarthak Gawari
+- Location: Dhankawdi, Pune
+- Contact email: sarthakgawari2324@gmail.com
+- Sections: About, Skills, Image Gallery, Contact
+- Skills listed: Unity (C#), Vuforia (AR/VR), SQL (PostgreSQL, MySQL), Frontend (HTML/CSS/JS)
+- Tooling listed: Figma, Git & GitHub, SolidWorks
 
-Validation
-- Use the W3C validator (https://validator.w3.org/) to validate `index.html`.
+Development details
+- Semantic HTML5 structure using `header`, `nav`, `main`, `section`, and `footer`.
+- Contact form with required fields and simple client-side validation (`novalidate` + `reportValidity()` fallback).
+- Small inline script sets the current year in the footer.
 
-Next steps
-- Add real images to the `images/` folder.
-- Enhance styling and make the site fully responsive.
-- Optionally wire the contact form to a backend or use a service such as Formspree for submissions.

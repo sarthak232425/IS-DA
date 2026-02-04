@@ -1,0 +1,69 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/* Reset and variables */
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+    --max-width:1000px;
+    --bg:#f5f7fb;
+    --card:#ffffff;
+    --primary:#2563eb; /* blue */
+    --accent:#06b6d4;  /* cyan */
+    --muted:#6b7280;
+    --radius:10px;
+}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;line-height:1.6;background:var(--bg);color:#0f172a}
+.container{max-width:var(--max-width);margin:0 auto;padding:1.25rem}
+
+/* Header (element selector) using Flexbox */
+header{background:linear-gradient(90deg, rgba(37,99,235,0.06), rgba(6,182,212,0.03));border-bottom:1px solid rgba(15,23,42,0.06)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.site-title{font-size:1.25rem;color:var(--primary);letter-spacing:0.2px}
+
+/* Navigation (class selector) */
+.site-nav a{color:var(--primary);text-decoration:none;padding:.45rem .6rem;border-radius:6px;transition:all .18s ease}
+.site-nav a:hover{background:rgba(37,99,235,0.08);transform:translateY(-2px)}
+.site-nav .btn-contact{background:var(--primary);color:#fff;padding:.5rem .75rem}
+.site-nav .btn-contact:hover{background:linear-gradient(90deg,var(--primary),var(--accent))}
+
+.panel{padding:2rem 0}
+.about-grid{display:grid;grid-template-columns:150px 1fr;gap:1rem;align-items:center}
+.profile-img{width:140px;height:140px;object-fit:cover;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.08)}
+.about-text p{margin-bottom:.6rem}
+.muted{color:var(--muted);font-size:.95rem}
+
+/* Skills list styling using descendant selector */
+.skills-list li{margin:.4rem 0;padding-left:1rem;list-style:inside;}
+
+/* Gallery using CSS Grid */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.gallery img{width:100%;height:160px;object-fit:cover;border-radius:8px;display:block}
+figure{background:var(--card);padding:.5rem;border-radius:8px;box-shadow:0 6px 20px rgba(15,23,42,0.04)}
+figcaption{font-size:.9rem;color:var(--muted);margin-top:.4rem}
+
+/* Form and interactive selectors (id + pseudo-class) */
+#contactForm input:focus, #contactForm textarea:focus{outline:none;border:1px solid var(--accent);box-shadow:0 4px 12px rgba(6,182,212,0.08)}
+.form-row{margin:.6rem 0;display:flex;flex-direction:column}
+label{font-weight:600;margin-bottom:.35rem}
+input,textarea{padding:.6rem;border:1px solid #e6eef8;border-radius:8px;font:inherit}
+.primary{background:var(--primary);color:#fff;border:none;padding:.6rem .9rem;border-radius:8px;cursor:pointer;transition:transform .14s ease, box-shadow .14s ease}
+.primary:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(37,99,235,0.12)}
+
+/* Footer */
+.site-footer{background:#0f172a;color:#fff;padding:.9rem 0;margin-top:2rem}
+
+/* Responsive design (media queries) */
+@media (max-width:800px){
+    .about-grid{grid-template-columns:1fr;text-align:center}
+    .gallery{grid-template-columns:repeat(2,1fr)}
+    .header-inner{flex-direction:column;align-items:flex-start}
+    .site-nav{display:flex;gap:.6rem}
+}
+
+@media (max-width:480px){
+    .gallery{grid-template-columns:1fr}
+    .site-title{font-size:1rem}
+}
+
+/* Utility */
+.muted a{color:var(--primary)}

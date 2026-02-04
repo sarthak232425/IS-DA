@@ -1,0 +1,9 @@
+This folder should contain the images referenced by `index.html`.
+
+Recommended filenames:
+- ICON.png  (profile icon)
+- KC.png    (Kaal Chakra project screenshot)
+- CE.png    (Colour Extractor project screenshot)
+- BB.png    (Block Blocker screenshot)
+
+Replace with your own images (PNG/JPG). Optimize images for web before submission.

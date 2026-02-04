@@ -1,0 +1,5 @@
+Add screenshots of the site here (desktop and mobile views) for submission.
+
+Suggested:
+- desktop.png
+- mobile.png
