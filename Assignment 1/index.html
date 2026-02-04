@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sarthak Gawari | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <h1 class="site-title">Sarthak Gawari</h1>
+            <nav class="site-nav" aria-label="Primary">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="panel container">
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <div class="profile">
+                    <img src="images/ICON.png" alt="Profile photo of Sarthak Gawari" class="profile-img">
+                </div>
+                <div class="about-text">
+                    <p>Hello — I'm a passionate Game Developer and UI/UX enthusiast with strong expertise in database management. Currently a 3rd Year IT Student at PICT, I enjoy designing, developing, and deploying full-scale projects from concept to completion.</p>
+                    <p>Location: Dhankawdi, Pune • Email: sarthakgawari2324@gmail.com</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="panel container">
+            <h2>Skills</h2>
+            <p>Below are some skills and technologies I specialize in:</p>
+            <ul>
+                <li>Unity Game Engine (C#) & Vuforia (AR & VR)</li>
+                <li>SQL (PostgreSQL, MySQL) & Database Management</li>
+                <li>Frontend Development (Vanilla JS, CSS, HTML)</li>
+            </ul>
+            <h3>Tooling</h3>
+            <ol>
+                <li>Figma</li>
+                <li>Git & GitHub</li>
+                <li>SolidWorks (Modeling & Printing)</li>
+            </ol>
+        </section>
+
+        <section id="gallery" class="panel container">
+            <h2>Image Gallery</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="images/KC.png" alt="Kaal Chakra - 2D Game screenshot">
+                    <figcaption>Kaal Chakra - 2D Game</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/CE.png" alt="Colour Extractor Website screenshot">
+                    <figcaption>Colour Extractor Website</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/BB.png" alt="Block Blocker - GameJam Winner screenshot">
+                    <figcaption>Block Blocker (GameJam Winner)</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="contact" class="panel container">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch, fill out the form below or email me at <a href="mailto:sarthakgawari2324@gmail.com">sarthakgawari2324@gmail.com</a>.</p>
+            <form id="contactForm" action="#" method="post" novalidate>
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Your full name" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="sarthakgawari2324@gmail.com" required>
+                </div>
+                <div class="form-row">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+                </div>
+                <div class="form-row">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Sarthak Gawari — Built with HTML &amp; CSS</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('contactForm').addEventListener('submit', function(e){
+            if (!this.checkValidity()) {
+                e.preventDefault();
+                this.reportValidity();
+            }
+        });
+    </script>
+</body>
+</html>

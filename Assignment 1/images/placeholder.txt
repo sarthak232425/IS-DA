@@ -1,0 +1,9 @@
+This folder should contain your images.
+
+Recommended filenames used by the HTML:
+- profile.jpg  (profile photo)
+- sample1.jpg  (gallery image 1)
+- sample2.jpg  (gallery image 2)
+- sample3.jpg  (gallery image 3)
+
+Replace these placeholder names with your own images (JPEG/PNG). If you don't have images yet, leave placeholders and the page will still render (broken image icons may appear).
