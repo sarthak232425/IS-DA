@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sarthak Gawari | Interactive Portfolio (Week 3)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <h1 class="site-title">Sarthak Gawari</h1>
+            <nav class="site-nav" aria-label="Primary">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#interactive">Interactive</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button id="themeToggle" aria-label="Toggle dark mode">Toggle</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="panel container">
+            <h2>About Me</h2>
+            <p>Game Developer & UI/UX enthusiast. 3rd Year IT Student at PICT.</p>
+        </section>
+
+        <section id="skills" class="panel container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Unity (C#), Vuforia</li>
+                <li>SQL (Postgres, MySQL)</li>
+                <li>Frontend: HTML, CSS, JavaScript</li>
+            </ul>
+        </section>
+
+        <section id="gallery" class="panel container">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <img src="images/KC.png" alt="Kaal Chakra">
+                <img src="images/CE.png" alt="Colour Extractor">
+                <img src="images/BB.png" alt="Block Blocker">
+            </div>
+        </section>
+
+        <section id="interactive" class="panel container">
+            <h2>Interactive Features</h2>
+
+            <article class="card">
+                <h3>To‑Do List</h3>
+                <div class="todo">
+                    <input id="todoInput" placeholder="Add a todo and press Enter">
+                    <ul id="todoList"></ul>
+                </div>
+            </article>
+
+            <article class="card">
+                <h3>Image Slider</h3>
+                <div class="slider" aria-live="polite">
+                    <button id="prev">‹</button>
+                    <div class="slides" id="slides">
+                        <img src="images/KC.png" alt="slide 1">
+                        <img src="images/CE.png" alt="slide 2">
+                        <img src="images/BB.png" alt="slide 3">
+                    </div>
+                    <button id="next">›</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <h3>Show / Hide Content</h3>
+                <button class="toggle-btn" data-target="#extra">Toggle Details</button>
+                <div id="extra" class="collapsible">Here are some extra details that can be shown or hidden using JavaScript.</div>
+            </article>
+        </section>
+
+        <section id="contact" class="panel container">
+            <h2>Contact</h2>
+            <form id="contactForm" action="#" method="post" novalidate>
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" required>
+                    <small class="error" data-for="name"></small>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required>
+                    <small class="error" data-for="email"></small>
+                </div>
+                <div class="form-row">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <small class="error" data-for="message"></small>
+                </div>
+                <div class="form-row">
+                    <button class="primary" type="submit">Send</button>
+                    <div id="formStatus" role="status" aria-live="polite"></div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Sarthak Gawari</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
