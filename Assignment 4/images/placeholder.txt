@@ -1,0 +1,10 @@
+Place optimized images for the site in this folder.
+
+Suggested filenames:
+- hero.jpg
+- team.jpg
+- service1.jpg
+- service2.jpg
+- service3.jpg
+
+Replace placeholders with real images before final submission.

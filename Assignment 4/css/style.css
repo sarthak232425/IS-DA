@@ -1,0 +1,42 @@
+:root{
+  --max-width:1000px;
+  --bg:#ffffff;
+  --muted:#6b7280;
+  --primary:#0ea5e9;
+  --accent:#2563eb;
+  --card:#f8fafc;
+}
+.\*{box-sizing:border-box}
+html, body {height:100%;}
+*{box-sizing:border-box}
+body{font-family:Segoe UI, Roboto, Arial, sans-serif;margin:0;background:var(--bg);color:#0f172a;display:flex;flex-direction:column;min-height:100vh}
+.container{max-width:var(--max-width);margin:0 auto;padding:1rem}
+.site-header{border-bottom:1px solid #eef2ff}
+.site-header .container{display:flex;align-items:center;gap:1rem}
+.brand{font-weight:700;color:var(--accent);text-decoration:none}
+.nav-toggle{display:none;border:none;background:transparent;font-size:1.1rem}
+.main-nav{margin-left:auto;display:flex;gap:1rem}
+.main-nav a{text-decoration:none;color:var(--primary);padding:.4rem .6rem;border-radius:6px}
+.hero{background:linear-gradient(180deg,rgba(14,165,233,0.06),transparent);padding:3rem 0}
+.hero-inner h1{font-size:2rem;margin-bottom:.5rem}
+.btn{display:inline-block;padding:.6rem .9rem;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none}
+.btn.ghost{background:transparent;border:1px solid #e6eef8;color:var(--primary)}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:1.5rem}
+.panel{padding:1.25rem 0}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.service-card{background:var(--card);padding:1rem;border-radius:8px}
+.contact-form{max-width:640px}
+.contact-form input,.contact-form textarea{width:100%;padding:.6rem;border:1px solid #e6eef8;border-radius:6px;margin-bottom:.5rem}
+.error{color:#dc2626;font-size:.9rem;min-height:1.1rem}
+.btn.primary{background:var(--accent);color:#fff;border:none;padding:.6rem .9rem;border-radius:6px;cursor:pointer}
+.site-footer{background:#0f172a;color:#fff;padding:1rem 0;margin-top:2rem}
+
+/* Make main take remaining space so footer sits at bottom */
+main{flex:1}
+
+/* Responsive */
+@media (max-width:800px){
+  .nav-toggle{display:inline-block;margin-left:auto}
+  .main-nav{display:none;flex-direction:column;gap:.5rem;width:100%}
+  .site-header .container{flex-direction:row;align-items:center}
+}
